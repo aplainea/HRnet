@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+@import "./utils/_variables";
+
+@import "./base/_reset";
+@import "./base/_base";
+
+@import "../../pages/HomePage/HomePage.scss";
+@import "../../pages/CreateEmployeesPage/CreateEmployeesPage.scss";
+@import "../../pages/CurrentEmployeesPage/CurrentEmployeesPage.scss";
+@import "../../pages/ErrorPage/ErrorPage.scss";

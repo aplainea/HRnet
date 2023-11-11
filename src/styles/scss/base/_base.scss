@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    text-align: center;
+}
+
+body,
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+    background: $black;
+    color: $white;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+p,
+ul,
+figure,
+h1,
+h2,
+h3 {
+    word-break: break-word;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+}
