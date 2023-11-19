@@ -5,7 +5,9 @@
 @import "./base/_reset";
 @import "./base/_base";
 
-@import "../../pages/HomePage/HomePage.scss";
 @import "../../pages/CreateEmployeesPage/CreateEmployeesPage.scss";
 @import "../../pages/CurrentEmployeesPage/CurrentEmployeesPage.scss";
 @import "../../pages/ErrorPage/ErrorPage.scss";
+
+@import "../../components/Header/Header.scss";
+@import "../../components/HRN-UI/Modal/HRNModal.scss";

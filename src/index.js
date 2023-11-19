@@ -5,7 +5,6 @@ import reportWebVitals from "./reportWebVitals";
 import "./styles/scss/main.scss";
 import App from "./App";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
-import HomePage from "./pages/HomePage/HomePage";
 import CreateEmployeesPage from "./pages/CreateEmployeesPage/CreateEmployeesPage";
 import CurrentEmployeesPage from "./pages/CurrentEmployeesPage/CurrentEmployeesPage";
 
@@ -13,21 +12,21 @@ const router = createBrowserRouter([
     {
         path: "/",
         element: <App />,
-        errorElement: <ErrorPage />,
         children: [
             {
                 index: true,
-                element: <HomePage />,
-            },
-            {
-                path: "create-employees",
                 element: <CreateEmployeesPage />,
             },
             {
                 path: "current-employees",
                 element: <CurrentEmployeesPage />,
             },
+            {
+                path: "*",
+                element: <ErrorPage status="404" />,
+            },
         ],
+        catch: ({ status }) => <ErrorPage status={status || "500"} />,
     },
 ]);
 

@@ -2,10 +2,6 @@
     box-sizing: border-box;
 }
 
-html {
-    text-align: center;
-}
-
 body,
 #root {
     display: flex;
@@ -16,8 +12,7 @@ body,
 
 main {
     flex: 1;
-    background: $black;
-    color: $white;
+    margin: 0 auto;
 }
 
 a {

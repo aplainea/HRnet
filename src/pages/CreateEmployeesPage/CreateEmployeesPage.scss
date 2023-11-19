@@ -1,0 +1,21 @@
+.createemployeespage {
+    display: flex;
+
+    .title-container {
+        display: flex;
+        gap: 10px;
+
+        h2 {
+            color: $primary;
+        }
+    }
+
+    .container-actions-form {
+        display: flex;
+        gap: 10px;
+    }
+
+    .ant-form-item {
+        margin-bottom: 10px;
+    }
+}
