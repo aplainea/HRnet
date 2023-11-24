@@ -78,6 +78,8 @@
 
             .modal-footer-actions {
                 display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-end;
                 gap: 10px;
             }
 

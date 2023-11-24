@@ -1,5 +1,7 @@
 import { Table } from "antd";
 
-const HRNTable = ({ ...propsAntDesign }) => <Table {...propsAntDesign} />;
+const HRNTable = ({ columns, ...propsAntDesign }) => {
+    return <Table columns={columns} {...propsAntDesign} />;
+};
 
 export default HRNTable;

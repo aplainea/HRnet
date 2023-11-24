@@ -1,0 +1,32 @@
+.currentemployeespage {
+    display: flex;
+
+    .title-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 10px;
+
+        .sub-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        h2 {
+            color: $primary;
+        }
+
+        .search {
+            width: 300px;
+        }
+    }
+    .pagination-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .pagination-info {
+        display: flex;
+        align-items: center;
+    }
+}

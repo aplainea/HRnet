@@ -1,7 +1,10 @@
 import { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import dayjs from "dayjs";
+import { v4 as uuidv4 } from "uuid";
 import { Form } from "antd";
-
+import { addEmployee } from "../../redux/Employees/EmployeesActions";
 import department from "../../data/department";
 import state from "../../data/state";
 import HRNButton from "../../components/HRN-UI/Button/HRNButton";
@@ -12,6 +15,7 @@ import HRNModal from "../../components/HRN-UI/Modal/HRNModal";
 
 const SubmitButton = ({ form, openModal }) => {
     const [submittable, setSubmittable] = useState(false);
+    const dispatch = useDispatch();
 
     const values = Form.useWatch([], form);
     useEffect(() => {
@@ -30,6 +34,19 @@ const SubmitButton = ({ form, openModal }) => {
     const handleSubmit = async () => {
         try {
             await form.validateFields();
+            const startDateValue = form.getFieldValue("start-date");
+            const dobValue = form.getFieldValue("date-of-birth");
+            const formData = {
+                ...form.getFieldsValue(),
+                id: uuidv4(),
+                "start-date": startDateValue
+                    ? dayjs(startDateValue).format("DD/MM/YYYY")
+                    : undefined,
+                "date-of-birth": dobValue
+                    ? dayjs(dobValue).format("DD/MM/YYYY")
+                    : undefined,
+            };
+            dispatch(addEmployee(formData));
             openModal();
         } catch (errorInfo) {
             console.log("Failed:", errorInfo);
