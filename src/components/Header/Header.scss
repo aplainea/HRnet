@@ -29,11 +29,24 @@
         .company-info {
             flex-grow: 1;
             text-align: center;
-            margin-right: 60px;
+            margin-left: 64px;
         }
 
         .company-name {
             margin: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .app-header {
+        .header-content {
+            .company-info {
+                margin-left: 0;
+            }
+            .label-theme {
+                display: none;
+            }
         }
     }
 }

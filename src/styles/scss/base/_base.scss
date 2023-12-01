@@ -10,6 +10,54 @@ body,
     margin: 0;
 }
 
+body {
+    &.light-theme {
+        background: $light;
+
+        .app-header {
+            background: $white;
+            .company-info a {
+                color: $black;
+            }
+        }
+    }
+
+    &.dark-theme {
+        background: $greyDark;
+
+        .app-header {
+            background: $greyDark;
+            .company-info a {
+                color: $white;
+            }
+        }
+        .createemployeespage .title-container h2 {
+            color: $secondary;
+        }
+        .currentemployeespage {
+            & .title-container h2 {
+                color: $secondary;
+            }
+
+            & .pagination-info {
+                color: $white;
+            }
+        }
+
+        .modalContainer {
+            background: rgba(37, 37, 37, 0.8);
+
+            & .modal {
+                background: $greyDark;
+                color: $white;
+            }
+            & .modal_header-title {
+                color: $secondary;
+            }
+        }
+    }
+}
+
 main {
     flex: 1;
     margin: 20px auto;
