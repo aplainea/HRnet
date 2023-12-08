@@ -7,6 +7,7 @@ const HRNModal = ({ show, close, title, mainContent, footerContent }) => {
             <div
                 className={`modalContainer ${show ? "show" : ""} `}
                 onClick={() => close()}
+                data-testid="modal-container"
             >
                 <div className="modal" onClick={(e) => e.stopPropagation()}>
                     <header className="modal_header">
