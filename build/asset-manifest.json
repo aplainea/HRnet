@@ -1,17 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.2d378fdb.css",
-    "main.js": "/static/js/main.10959a4a.js",
-    "static/js/787.92a4d0b6.chunk.js": "/static/js/787.92a4d0b6.chunk.js",
-    "static/media/logo-wealth-health.png": "/static/media/logo-wealth-health.a7ef27d7eb80977ea778.png",
-    "static/media/times-solid.svg": "/static/media/times-solid.ea7c95d7120c0efcb4b16602bf9049a5.svg",
-    "index.html": "/index.html",
-    "main.2d378fdb.css.map": "/static/css/main.2d378fdb.css.map",
-    "main.10959a4a.js.map": "/static/js/main.10959a4a.js.map",
-    "787.92a4d0b6.chunk.js.map": "/static/js/787.92a4d0b6.chunk.js.map"
+    "main.css": "/hrnet/static/css/main.5788c665.css",
+    "main.js": "/hrnet/static/js/main.d2daabd1.js",
+    "static/media/logo-wealth-health.png": "/hrnet/static/media/logo-wealth-health.a7ef27d7eb80977ea778.png",
+    "index.html": "/hrnet/index.html",
+    "main.5788c665.css.map": "/hrnet/static/css/main.5788c665.css.map",
+    "main.d2daabd1.js.map": "/hrnet/static/js/main.d2daabd1.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d378fdb.css",
-    "static/js/main.10959a4a.js"
+    "static/css/main.5788c665.css",
+    "static/js/main.d2daabd1.js"
   ]
 }
