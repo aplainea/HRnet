@@ -9,6 +9,7 @@
         "@testing-library/user-event": "^13.5.0",
         "antd": "^5.11.2",
         "dayjs": "^1.11.10",
+        "hrnet-modal-aplainea": "^1.0.5",
         "node-sass": "^7.0.3",
         "react": "^18.2.0",
         "react-devtools": "^4.28.5",

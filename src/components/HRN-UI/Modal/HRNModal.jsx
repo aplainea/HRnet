@@ -1,5 +1,4 @@
 import { createPortal } from "react-dom";
-import CloseIcon from "../../../assets/times-solid.svg";
 
 const HRNModal = ({ show, close, title, mainContent, footerContent }) => {
     return createPortal(
@@ -13,7 +12,7 @@ const HRNModal = ({ show, close, title, mainContent, footerContent }) => {
                     <header className="modal_header">
                         <h2 className="modal_header-title">{title}</h2>
                         <button className="close" onClick={() => close()}>
-                            <img src={CloseIcon} alt="close" />
+                            &times;
                         </button>
                     </header>
                     <main className="modal_content">{mainContent}</main>

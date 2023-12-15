@@ -11,7 +11,8 @@ import HRNButton from "../../components/HRN-UI/Button/HRNButton";
 import HRNSelect from "../../components/HRN-UI/Select/HRNSelect";
 import HRNInput from "../../components/HRN-UI/Input/HRNInput";
 import HRNDatePicker from "../../components/HRN-UI/DatePicker/HRNDatePicker";
-import HRNModal from "../../components/HRN-UI/Modal/HRNModal";
+// import HRNModal from "../../components/HRN-UI/Modal/HRNModal";
+import { Modal } from "hrnet-modal-aplainea";
 
 const SubmitButton = ({ form, openModal }) => {
     const [submittable, setSubmittable] = useState(false);
@@ -278,7 +279,7 @@ export default function CreateEmployeesPage() {
                         </div>
                     </Form.Item>
                 </Form>
-                <HRNModal
+                <Modal
                     show={modalVisible}
                     close={closeModal}
                     title="Submission Successful"
