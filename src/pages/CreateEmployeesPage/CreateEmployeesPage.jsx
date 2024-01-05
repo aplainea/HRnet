@@ -72,7 +72,7 @@ const ResetButton = ({ form }) => {
     };
 
     return (
-        <HRNButton danger onClick={handleReset}>
+        <HRNButton type="text" onClick={handleReset}>
             Reset
         </HRNButton>
     );
@@ -229,6 +229,7 @@ export default function CreateEmployeesPage() {
                         ]}
                     >
                         <HRNSelect
+                            aria-label="Select a state"
                             placeholder="Ex. Alaska"
                             options={state.map((state) => ({
                                 value: state.abbreviation,
@@ -262,6 +263,7 @@ export default function CreateEmployeesPage() {
                         ]}
                     >
                         <HRNSelect
+                            aria-label="Select a department"
                             placeholder="Ex. Engineering"
                             options={department.map((value) => ({
                                 value,

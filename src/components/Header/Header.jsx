@@ -24,6 +24,7 @@ const AppHeader = ({ isDarkTheme, toggleTheme }) => (
                     {isDarkTheme ? "Dark Theme" : "Light Theme"}
                 </span>
                 <Switch
+                    aria-label="Switch between Dark and Light theme"
                     checked={isDarkTheme}
                     onChange={toggleTheme}
                     style={{ marginLeft: "8px" }}
