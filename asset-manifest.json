@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/hrnet/static/css/main.5788c665.css",
-    "main.js": "/hrnet/static/js/main.3753ed8f.js",
+    "main.js": "/hrnet/static/js/main.9f4b7e3a.js",
     "static/media/logo-wealth-health.png": "/hrnet/static/media/logo-wealth-health.a7ef27d7eb80977ea778.png",
     "index.html": "/hrnet/index.html",
     "main.5788c665.css.map": "/hrnet/static/css/main.5788c665.css.map",
-    "main.3753ed8f.js.map": "/hrnet/static/js/main.3753ed8f.js.map"
+    "main.9f4b7e3a.js.map": "/hrnet/static/js/main.9f4b7e3a.js.map"
   },
   "entrypoints": [
     "static/css/main.5788c665.css",
-    "static/js/main.3753ed8f.js"
+    "static/js/main.9f4b7e3a.js"
   ]
 }
